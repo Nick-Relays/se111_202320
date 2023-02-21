@@ -19,30 +19,32 @@
         
         var firstName = prompt(`Please Enter your first name`) 
         var lastName = prompt(`Thanks ${firstName}! Please Enter your last name`) 
+        //Varibles for Name and Last name
 
         console.log(firstName,lastName)   
 
 
-        alert(`Welcome To Your Pay Calcuator ${firstName}!`)
+        alert(`Welcome To Your Pay Calcuator ${firstName,lastName}!`)
 
 
         var hourRate = Number(prompt(`Please Enter Your Hourly Rate`)) 
         var hoursWorked = Number(prompt(`Please Enter Hours Worked For a TWO Week Period`)) 
+        //Data for hours worked and hourly rate
 
         console.log(hourRate)
         console.log(hoursWorked)
 
-        grossPay= hourRate*hoursWorked 
+        grossPay= hourRate*hoursWorked //Gross Pay
 
-        console.log(grossPay.toFixed(2)) 
+        console.log(`Gross Pay:`grossPay.toFixed(2)) 
 
-        tax=grossPay*0.2
+        tax=grossPay*0.2 //Uncle Sam's Share
 
-        console.log(tax.toFixed(2))
+        console.log(`Tax Amount:`tax.toFixed(2))
 
-        netPay=grossPay-tax
+        netPay=grossPay-tax //net pay
 
-        console.log(netPay.toFixed(2))
+        console.log(`Net Pay:`netPay.toFixed(2)) 
         
         alert(`Your Gross pay is $${grossPay.toFixed(2)}! Your Tax Taken Out Was $${tax.toFixed(2)}! Your Netpay Is $${netPay.toFixed(2)}!`)
         alert(`Thank You For Using My Pay Calcuator`)
