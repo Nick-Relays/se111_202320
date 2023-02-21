@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Nick Gazerro"> 
+    <meta name="description" content="Week 6 Pay Calcuator">
+    <title>JS Pay Calcuator </title>
+
+</head>
+<body>
+    <script>
+        
+        
+        var firstName = prompt(`Please Enter your first name`) 
+        var lastName = prompt(`Thanks ${firstName}! Please Enter your last name`) 
+
+        console.log(firstName,lastName)   
+
+
+        alert(`Welcome To Your Pay Calcuator ${firstName}!`)
+
+
+        var hourRate = Number(prompt(`Please Enter Your Hourly Rate`)) 
+        var hoursWorked = Number(prompt(`Please Enter Hours Worked For a TWO Week Period`)) 
+
+        console.log(hourRate)
+        console.log(hoursWorked)
+
+        grossPay= hourRate*hoursWorked 
+
+        console.log(grossPay.toFixed(2)) 
+
+        tax=grossPay*0.2
+
+        console.log(tax.toFixed(2))
+
+        netPay=grossPay-tax
+
+        console.log(netPay.toFixed(2))
+        
+        alert(`Your Gross pay is $${grossPay.toFixed(2)}! Your Tax Taken Out Was $${tax.toFixed(2)}! Your Netpay Is $${netPay.toFixed(2)}!`)
+        alert(`Thank You For Using My Pay Calcuator`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
