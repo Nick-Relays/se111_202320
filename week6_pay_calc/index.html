@@ -36,15 +36,15 @@
 
         grossPay= hourRate*hoursWorked //Gross Pay
 
-        console.log(`Gross Pay:`grossPay.toFixed(2)) 
+        console.log(`Gross Pay:$ ${grossPay.toFixed(2)}`) 
 
         tax=grossPay*0.2 //Uncle Sam's Share
 
-        console.log(`Tax Amount:`tax.toFixed(2))
+        console.log(`Tax Amount:$ ${tax.toFixed(2)}`)
 
         netPay=grossPay-tax //net pay
 
-        console.log(`Net Pay:`netPay.toFixed(2)) 
+        console.log(`Net Pay:$ ${netPay.toFixed(2)}`) 
         
         alert(`Your Gross pay is $${grossPay.toFixed(2)}! Your Tax Taken Out Was $${tax.toFixed(2)}! Your Netpay Is $${netPay.toFixed(2)}!`)
         alert(`Thank You For Using My Pay Calcuator`)
